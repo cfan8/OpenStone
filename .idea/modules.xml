@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OpenStone.iml" filepath="$PROJECT_DIR$/OpenStone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OpenStoneBase/OpenStoneBase.iml" filepath="$PROJECT_DIR$/OpenStoneBase/OpenStoneBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleCard/SampleCard.iml" filepath="$PROJECT_DIR$/SampleCard/SampleCard.iml" />
     </modules>
   </component>
 </project>

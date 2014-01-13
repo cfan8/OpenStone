@@ -19,26 +19,6 @@ public abstract class ICard {
 	public static final int QUALITY_LEGENDARY = 4;
 
 	public ICard() {
-		this.cost = getCost();
-		this.quality = getQuality();
-		this.cardImage = getCardImage();
-		this.cardName = getCardName();
-		this.cardDescription = getCardDescription();
-		this.overLoad = getOverLoad();
-		this.deckUsable = getDeckUsable();
 	}
 
-	public abstract boolean getDeckUsable();
-
-	public abstract int getOverLoad();
-
-	public abstract String getCardDescription();
-
-	public abstract String getCardName();
-
-	public abstract String getCardImage();
-
-	public abstract int getCost();
-
-	public abstract int getQuality();
 }
