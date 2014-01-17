@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://openstone.linangran.com"
+           xmlns="http://openstone.linangran.com" elementFormDefault="qualified">
+	<xs:complexType name="cardType">
+		<xs:sequence>
+			<xs:element name="cardName" type="xs:string"/>
+			<xs:element name="cardDescription" type="xs:string"/>
+			<xs:element name="cardImage" type="xs:anyURI"/>
+			<xs:element name="deckUsable" type="xs:boolean"/>
+			<xs:element name="cost" type="xs:nonNegativeInteger"/>
+			<xs:element name="overload" type="xs:nonNegativeInteger"/>
+			<xs:element name="quality">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="groovyClass" type="xs:anyURI"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="buffCardType">
+		<xs:sequence>
+			<xs:element name="cardDescription" type="xs:string"/>
+			<xs:element name="groovyClass" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="minionCardType">
+		<xs:complexContent>
+			<xs:extension base="cardType">
+				<xs:sequence>
+					<xs:element name="health" type="xs:nonNegativeInteger"/>
+					<xs:element name="attack" type="xs:nonNegativeInteger"/>
+					<xs:element name="immune" type="xs:boolean"/>
+					<xs:element name="stealth" type="xs:boolean"/>
+					<xs:element name="taunt" type="xs:boolean"/>
+					<xs:element name="windfury" type="xs:boolean"/>
+					<xs:element name="hasShield" type="xs:boolean"/>
+					<xs:element name="hasCharge" type="xs:boolean"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="spellCardType">
+		<xs:complexContent>
+			<xs:extension base="cardType">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="comboCardType">
+		<xs:complexContent>
+			<xs:extension base="spellCardType">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="weaponCardType">
+		<xs:complexContent>
+			<xs:extension base="cardType">
+				<xs:sequence>
+					<xs:element name="durability" type="xs:nonNegativeInteger"/>
+					<xs:element name="attack" type="xs:nonNegativeInteger"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="secretCardType">
+		<xs:complexContent>
+			<xs:extension base="cardType">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="choiceCardType">
+		<xs:complexContent>
+			<xs:extension base="cardType">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>

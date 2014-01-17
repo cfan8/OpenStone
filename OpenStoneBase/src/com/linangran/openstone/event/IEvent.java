@@ -24,6 +24,8 @@ public abstract class IEvent implements Comparable {
 	public static final int EVENT_TYPE_SUMMON = 1;
 	public static final int EVENT_TYPE_SPELL_ATTACK = 2;
 	public static final int EVENT_TYPE_SPELL = 3;
+	public static final int EVENT_TYPE_ROUND_START = 4;
+	public static final int EVENT_TYPE_ROUND_END = 5;
 
 	@Override
 	public int compareTo(Object o)

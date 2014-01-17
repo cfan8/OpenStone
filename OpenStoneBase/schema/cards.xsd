@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://openstone.linangran.com"
+           xmlns="http://openstone.linangran.com" elementFormDefault="qualified">
+	<xs:include schemaLocation="types.xsd"/>
+	<xs:complexType name="allCardType">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element name="minionCard" type="minionCardType"/>
+			<xs:element name="choiceCard" type="choiceCardType"/>
+			<xs:element name="comboCard" type="comboCardType"/>
+			<xs:element name="secretCard" type="secretCardType"/>
+			<xs:element name="spellCard" type="spellCardType"/>
+			<xs:element name="weaponCard" type="weaponCardType"/>
+			<xs:element name="buffCard" type="buffCardType"/>
+		</xs:choice>
+	</xs:complexType>
+</xs:schema>

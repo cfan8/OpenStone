@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<openstone
+		xmlns="http://openstone.linangran.com"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<gameCards>
+		<minionCard>
+			<cardName>石牙野猪</cardName>
+			<cardDescription>冲锋</cardDescription>
+			<cardImage>pig.png</cardImage>
+			<deckUsable>true</deckUsable>
+			<cost>1</cost>
+			<overload>0</overload>
+			<quality>0</quality>
+			<groovyClass></groovyClass>
+			<health>1</health>
+			<attack>1</attack>
+			<immune>false</immune>
+			<stealth>false</stealth>
+			<taunt>false</taunt>
+			<windfury>false</windfury>
+			<hasShield>false</hasShield>
+			<hasCharge>true</hasCharge>
+		</minionCard>
+	</gameCards>
+	<heros></heros>
+	<groovyClasspath>sample.openstone.linangran.com</groovyClasspath>
+	<resourcePath>res</resourcePath>
+</openstone>

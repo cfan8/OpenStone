@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://openstone.linangran.com"
+           xmlns="http://openstone.linangran.com" elementFormDefault="qualified">
+	<xs:include schemaLocation="cards.xsd"/>
+	<xs:include schemaLocation="types.xsd"/>
+	<xs:element name="openstone">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="gameCards" type="allCardType"/>
+				<xs:element name="heros">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded" minOccurs="0">
+							<xs:element name="hero" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="heroCard" type="minionCardType"/>
+										<xs:element name="heroSpell" type="spellCardType"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="groovyClasspath" type="xs:anyURI"/>
+				<xs:element name="resourcePath" type="xs:anyURI"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	</xs:schema>

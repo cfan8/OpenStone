@@ -11,7 +11,6 @@ public abstract class IMinionCard extends ICard {
 	public boolean stealth;
 	public boolean taunt;
 	public boolean windfury;
-	public boolean freezed;
 	public boolean hasShield;
 	public boolean hasCharge;
 
