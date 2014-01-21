@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="groovy-2.2.1 (2)" level="application" />
-    <orderEntry type="module" module-name="OpenStoneBase" exported="" />
+    <orderEntry type="module" module-name="OpenStoneBase" />
+    <orderEntry type="library" name="groovy-2.2.1" level="application" />
   </component>
 </module>
 

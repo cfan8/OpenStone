@@ -1,5 +1,7 @@
 package com.linangran.openstone.card;
 
+import groovy.lang.GroovyObject;
+
 import java.util.List;
 
 /**
@@ -7,8 +9,8 @@ import java.util.List;
  */
 public abstract class IChoiceCard extends ICard {
 
-	public List<Class<? extends ICard>> choiceList;
-	public IChoiceCard(List<Class<? extends ICard>> choiceList)
+	public List<GroovyObject> choiceList;
+	public IChoiceCard(List<GroovyObject> choiceList)
 	{
 		super();
 		this.choiceList = choiceList;

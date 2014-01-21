@@ -9,4 +9,5 @@ public abstract class IContext {
 	int playerNum;
 	List<IPlayer> playerList;
 	int currentPlayer;
+
 }

@@ -10,7 +10,6 @@
 			<xs:element name="secretCard" type="secretCardType"/>
 			<xs:element name="spellCard" type="spellCardType"/>
 			<xs:element name="weaponCard" type="weaponCardType"/>
-			<xs:element name="buffCard" type="buffCardType"/>
 		</xs:choice>
 	</xs:complexType>
 </xs:schema>
