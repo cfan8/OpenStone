@@ -3,6 +3,8 @@
 <openstone
 		xmlns="http://openstone.linangran.com"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<groovyClasspath>sample.openstone.linangran.com</groovyClasspath>
+	<resourcePath>res</resourcePath>
 	<gameCards>
 		<minionCard>
 			<cardName>石牙野猪</cardName>
@@ -24,6 +26,4 @@
 		</minionCard>
 	</gameCards>
 	<heros></heros>
-	<groovyClasspath>sample.openstone.linangran.com</groovyClasspath>
-	<resourcePath>res</resourcePath>
 </openstone>

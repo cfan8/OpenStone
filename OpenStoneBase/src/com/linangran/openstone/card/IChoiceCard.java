@@ -9,8 +9,8 @@ import java.util.List;
  */
 public abstract class IChoiceCard extends ICard {
 
-	public List<GroovyObject> choiceList;
-	public IChoiceCard(List<GroovyObject> choiceList)
+	public List<ICard> choiceList;
+	public IChoiceCard(List<ICard> choiceList)
 	{
 		super();
 		this.choiceList = choiceList;

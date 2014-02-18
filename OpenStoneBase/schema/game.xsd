@@ -4,7 +4,9 @@
 	<xs:include schemaLocation="types.xsd"/>
 	<xs:element name="openstone">
 		<xs:complexType>
-			<xs:all>
+			<xs:sequence>
+				<xs:element name="groovyClasspath" type="xs:anyURI"/>
+				<xs:element name="resourcePath" type="xs:anyURI"/>
 				<xs:element name="gameCards" type="allCardType"/>
 				<xs:element name="heros">
 					<xs:complexType>
@@ -20,9 +22,7 @@
 						</xs:choice>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="groovyClasspath" type="xs:anyURI"/>
-				<xs:element name="resourcePath" type="xs:anyURI"/>
-			</xs:all>
+			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 	</xs:schema>
